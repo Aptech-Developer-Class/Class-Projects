@@ -2,7 +2,7 @@ const cells = document.querySelectorAll('.grid div')
 const result = document.getElementById('result')
 const displayCurrentPlayer = document.getElementById('currentPlayer')
 
-    let currentPlayer = 1
+  let currentPlayer = 1
 
     const winningArrays = [
     [0, 1, 2, 3],
@@ -75,11 +75,13 @@ const displayCurrentPlayer = document.getElementById('currentPlayer')
     [12, 19, 26, 33],
     [13, 20, 27, 34],
   ]
+
   function clearBoard(){
     for(let i = 0; i < cells.length; i++){
         cells[i].style.backgroundColor = 'white'
       }
   }
+
   function checkBoard() {
     for (let y = 0; y < winningArrays.length; y++) {
       const cell1 = cells[winningArrays[y][0]]
@@ -87,7 +89,7 @@ const displayCurrentPlayer = document.getElementById('currentPlayer')
       const cell3 = cells[winningArrays[y][2]]
       const cell4 = cells[winningArrays[y][3]]
 
-      //check those squares to see if they all have the class of player-one
+      //check those cells to see if they all have the background color of player 1
       if (
         cell1.style.backgroundColor=='red' &&
         cell2.style.backgroundColor == 'red' &&
@@ -101,7 +103,7 @@ const displayCurrentPlayer = document.getElementById('currentPlayer')
         clearBoard()
       }
 
-      //check those squares to see if they all have the class of player-two
+      //check those cells to see if they all have the background color of player 2
       if (
         cell1.style.backgroundColor=='yellow' &&
         cell2.style.backgroundColor=='yellow' &&
@@ -118,7 +120,6 @@ const displayCurrentPlayer = document.getElementById('currentPlayer')
 }
 
 
-
 for(let i = 0; i < cells.length; i++){
     cells[i].onclick = () =>{
         if (cells[i + 7].classList.contains('taken') &&! cells[i].classList.contains('taken')) {
@@ -131,59 +132,59 @@ for(let i = 0; i < cells.length; i++){
                 currentPlayer = 2
                 displayCurrentPlayer.innerHTML = currentPlayer
             } else if (currentPlayer == 2){
-                cells[i].classList.add('taken')
-                cells[i].style.backgroundColor='yellow'
-                currentPlayer = 1
-                displayCurrentPlayer.innerHTML = currentPlayer        
-            } 
-        }else alert('Cant play there!')       
-        checkBoard()
-    }
+              cells[i].classList.add('taken')
+              cells[i].style.backgroundColor='yellow'
+              currentPlayer = 1
+              displayCurrentPlayer.innerHTML = currentPlayer        
+          } 
+      }else alert('Cant play there!')       
+      checkBoard()
+  }
 } 
 
 
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("myBtn");
+const modal = document.getElementById("myModal")
+const btn = document.getElementById("myBtn")
 
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0]
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = "block"
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  modal.style.display = "none"
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.display = "none"
   }
 }
 
-const modal2 = document.getElementById("resultsModal");
+const modal2 = document.getElementById("resultsModal")
 
 // Get the <span> element that closes the modal
-const spann = document.getElementsByClassName("closed")[0];
+const spann = document.getElementsByClassName("closed")[0]
 
 // When the user clicks on the button, open the modal
 function displayModal() {
-  modal2.style.display = "block";
+  modal2.style.display = "block"
 }
 
 // When the user clicks on <span> (x), close the modal
 spann.onclick = function() {
-  modal2.style.display = "none";
+  modal2.style.display = "none"
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal2) {
-    modal2.style.display = "none";
+    modal2.style.display = "none"
   }
 }
 
