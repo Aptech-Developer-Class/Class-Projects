@@ -142,8 +142,7 @@ for(let i = 0; i < cells.length; i++){
   }
 } 
 
-
-const modal = document.getElementById("myModal")
+const modal = document.getElementById("rulesModal")
 const btn = document.getElementById("myBtn")
 
 // Get the <span> element that closes the modal
