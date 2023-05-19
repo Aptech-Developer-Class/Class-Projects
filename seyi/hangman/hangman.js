@@ -107,6 +107,6 @@ function endGame() {
   } else if (playerTwoScore > playerOneScore) {
     alert(`Player Two Wins! Scores: ${playerOneScore} - ${playerTwoScore}`);
   } else {
-    alert(`Draw! Scores: ${playerOneScore} - ${playerTwoScore}`);
+    alert(`It's a tie! Scores: ${playerOneScore} - ${playerTwoScore}`);
   }
 }
