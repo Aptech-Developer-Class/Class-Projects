@@ -91,7 +91,7 @@
   justify-content: space-between;
 }
 .stays-box {
-  margin: 10px auto;
+  margin: 10px 0px;
 }
 .hidden{
   display: none;
@@ -295,6 +295,11 @@ p.guests-dropdown-text {
 }
 .children {
   padding-top: 20px;
+}
+@media (max-width: 767px){
+  .stays-box {
+    margin: 10px auto;
+  }
 }
 @media (max-width: 450px) {
   .navbar {
