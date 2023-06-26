@@ -1,0 +1,22 @@
+#characterdetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image {
+    border-radius: 20px;
+}
+
+/* .p{
+    font-weight: bolder;
+} */
+
+.charactercontainer{
+    margin-bottom: 1000px;
+}
+
+.name{
+    font-weight: bolder;
+    font-size: larger;
+}
