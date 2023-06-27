@@ -1,0 +1,179 @@
+:root{
+    --Dark-Blue-Dark-Mode-Elements: hsl(209, 23%, 22%);
+    --Very-Dark-Blue-Dark-Mode-Background: hsl(207, 26%, 17%);
+    --Very-Dark-Blue-Light-Mode-Text: hsl(200, 15%, 8%);
+    --Dark-Gray-Light-Mode-Input: hsl(0, 0%, 52%);
+    --Very-Light-Gray-Light-Mode-Background: hsl(0, 0%, 98%);
+    --White-Dark-Mode-Text-Light-Mode-Elements: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--Very-Light-Gray-Light-Mode-Background);
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: white;
+    box-shadow: 0 0 13px gainsboro;
+}
+
+#header h3 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#modeContainer {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+#modeContainer h5 {
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+header  img,
+.searchContainer img {
+    width: 20px;
+}
+
+#inputContainer {
+    width: 100px;
+}
+
+input[type=text] {
+    padding: 30px 10px 30px 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px 20px 40px 20px;
+    padding-left: 25px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px gainsboro;
+}
+
+.btn {
+    margin-bottom: 7px !important;
+    background-color: white !important;
+    box-shadow: 0 0 5px gainsboro !important;
+    padding: 15px 35px !important;
+    outline: none !important;
+    letter-spacing: 1px;
+    font-weight: 800 !important;
+}
+
+.caret {
+    margin-left: 15px !important;
+}
+
+.dropdown-menu {
+    padding: 20px 110px 20px 10px !important;
+    border: none !important;
+}
+
+.dropdown-menu li a {
+    color: black !important;
+    font-weight: 500 !important;
+}
+
+.imageContainer {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.images {
+    height: 230px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+
+ #main {
+    margin-top: 40px;
+}
+
+
+.country {
+    font-weight: 700;
+    padding: 10px 0px 0px 25px;
+}
+
+.population {
+    font-weight: 500;
+    padding: 10px 0px 0px 25px;
+    margin-bottom: -10px;
+}
+
+.capital {
+    padding-bottom: 50px;
+}
+
+#searchIcon {
+    cursor: pointer;
+}
+
+.numerals {
+     margin-bottom: 70px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 13px gainsboro;
+    width: 350px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: white !important;
+    color: black;
+}
+
+.btn2 {
+    background-color: hsl(209, 23%, 22%) !important;
+    padding: 15px 35px;
+    box-shadow: 0 0 7px hsl(209, 23%, 22%);
+    font-family: 'Nuntio sans'sans-serif;
+    font-size: 14px;
+    border: 1px solid hsl(209, 23%, 22%);
+    color: white;
+}
+
+
+@media only screen and (min-width:1000px) {
+    nav {
+        display: flex;
+        justify-content: space-between !important;
+        align-items: center;
+    }
+
+    .searchContainer {
+        width: 40%;
+        margin-left: 80px;
+    }
+}
