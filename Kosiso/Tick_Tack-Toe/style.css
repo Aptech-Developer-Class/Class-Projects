@@ -1,0 +1,44 @@
+body{
+    background-color: teal;
+}
+
+#gameContainer {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin: auto;
+    width: 750px;
+}
+
+.cell {
+    width: 250px;
+    height: 200px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 90px;
+    font-size: 170px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+#restartBtn {
+    background-color: goldenrod;
+    padding: 10px 50px;
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.winner {
+    background-color: red;
+    color: darkblue;
+}
